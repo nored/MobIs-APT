@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mobile Informationssystem</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+				$('.menubutton').click(function(){
+				$('nav').slideToggle('slow');
+				});
+				});
+			</script>
+	</head>
+	<body>
+		<section id="menubar">
+			<ul>
+				<li>
+					<a class="menubutton" href="#menu">
+						<img src="images/menu.png" />
+					</a>
+				</li>
+			</ul>
+		</section>
+		<header>
+			<h1>MobIS</h1>
+		</header>
+		<nav class="nav">
+			<ul>
+				<li>
+					<a href="index.html" class="active">HOME</a>
+				</li>
+				<li>
+					<a href="index.html" class="active">BLOG</a>
+				</li>
+				<li>
+					<a href="index.html" class="active">PROFIL</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="main">
+			<form action="/action_page.php">
+				<section id="formular">
+
+					<img src="images/profilbild.jpg" align="left" />
+
+					Nachname:
+					<input type="text" name="nachname" value="" required>
+						<br>
+					Vorname:
+						<input type="text" name="vorname" value="" required>
+						<br>
+					Geschlecht:
+						<select>
+							<option value="maennlich">Männlich</option>
+							<option value="weiblich">Weiblich</option>
+						</select>
+						<br>
+					Email:
+						<input type="text" name="vorname" value="" required>
+						<br>
+					Email widerholen:
+						<input type="text" name="vorname" value="" required>
+						<br>
+					Passwort:
+						<input type="password" name="vorname" value="" required>
+						<br>
+					Passwort widerholen:
+						<input type="password" name="vorname" value=""	required>
+						<br>
+					Sprache:
+						<select>
+							<option value="franzoesisch">Französisch</option>
+							<option value="deutsch">Deutsch</option>
+							<option value="englisch">Englisch</option>
+						</select>
+						<br>
+						<input type="submit" value="Speichern">
+				</section>
+			</form>
+			<aside>
+				<section>
+					<h2>Ueber</h2>
+					<p>Wir sind uns einig: Mobiles Webdesign ist heute unverzichtbar.
+						Welche drei essentielle Basics Du bei der Umstellung von
+						„statisch“ auf „dynamisch“ beachten musst, damit Deine Seite auch
+						auf allen Endgeräten rund läuft und Absprungraten sinken erfährst
+						Du, wenn Du weiterliest.</p>
+				</section>
+				<section>
+					<h2>Lern mehr über RWD</h2>
+					<p>In der heutigen Zeit der Smartphones und Tablets ist responsives
+						Webdesign oder neudeutsch „Responsive Webdesign“ das A und O der
+						Usability. Die Seite mit den besten Produkten und aktuellsten
+						Inhalten verliert ohne Anpassung auf Mobilgeräte unzählige User –
+						einfach weil es anstrengend ist. Wer hat schon Lust, mit den
+						Fingern beim Lesen von links nach rechts zu scrollen, Texte
+						vergrößern zu müssen und den Button auch nach dem fünften Anlauf
+						zu verfehlen? </p>
+				</section>
+			</aside>
+		</section>
+	</body>
+</html>
